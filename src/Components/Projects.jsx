@@ -89,8 +89,8 @@ const Projects = () => {
                         <div className='outer-card-container'>
                             <div className="inner-card-container">
                                 <a href="https://react-shopping-cart-bala.netlify.app/" target='_blank'><img className='project-img' src={shoppingCart} alt="" /></a>
-                                <h4 className='text-center project-title mt-2 mb-2'>React shopping cart</h4>
-                                <p className='text-center project-des'>A dynamic e-commerce platform built with React, enabling users to add and manage products in their cart, view real-time updates, and experience seamless navigation across devices. Offers a sleek design and intuitive shopping interface</p>
+                                <h4 className='text-center project-title mt-2 mb-2'>React shopping cart Website</h4>
+                                <p className='text-center project-des'>A dynamic e-commerce platform built with React, enabling users to add and manage products in their cart, view real-time updates, and experience seamless navigation across devices. Offers a sleek design and intuitive shopping interface, real time</p>
                                 <div className="action-buttons">
                                     <div className="project-links">
                                         <a href="https://react-shopping-cart-bala.netlify.app/" target='_blank'>LIVE DEMO</a>

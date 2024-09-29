@@ -14,6 +14,28 @@ const Home = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
+        const mobileMenu = document.querySelector(".mobile-navbar-list");
+        const menuIcon = document.querySelector(".logo i");
+        const closeIcon = document.querySelector(".close-icon");
+
+        menuIcon.addEventListener("click", () => {
+            mobileMenu.classList.add("show-menu");
+        })
+
+        closeIcon.addEventListener("click", () => {
+            mobileMenu.classList.remove("show-menu")
+        })
+
+        const handleNavclick = () => {
+            const menuClass = document.querySelector(".mobile-navbar-list");
+            menuClass.classList.remove("show-menu");
+        }
+
+        const aNodeListMobile = document.querySelectorAll(".mobile-navbar-list ul li a");
+        aNodeListMobile.forEach(a => {
+            a.addEventListener("click", handleNavclick)
+        });
+
         const aNodeList = document.querySelectorAll(".navbar ul li a");
 
         const onfocusEffect = (event) => {
@@ -48,6 +70,18 @@ const Home = () => {
 
     return (
         <>
+            <div className="mobile-navbar-list">
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href='#skills'>Skills</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
+                <i className='bx bx-x close-icon'></i>
+
+            </div>
+
             <header className={isScrolled ? "scrolled" : ""}>
                 <nav>
                     <div className="navbar container">
@@ -92,7 +126,7 @@ const Home = () => {
                         </div>
                         <p>As a MERN Stack Developer, I specialize in creating dynamic and responsive web applications. I bring a solid skill set in both front-end and back-end development</p>
                         <div className="action-buttons">
-                            <a className='download-btn' download href={resume}>Download CV</a>
+                            <a className='download-btn' target='_blank' href="https://docs.google.com/document/d/1U8WfeGRc5hyEiXwCstLQyz-vQ9NSKYlZBdVmZUSGoiE/edit?usp=sharing">View Resume</a>
                             <a className='contact-btn' href='#contact'>Contact me</a>
                         </div>
                     </div>

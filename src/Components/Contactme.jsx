@@ -31,17 +31,35 @@ const Contactme = () => {
         }),
 
         onSubmit: (values) => {   // Function to handle form submission
-            formik.resetForm();
-            toast.success("Message send successful", {  // Notification
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                transition: Slide // Use Slide for right-side animation
-            });
+
+            const userDetails = {
+                userName: values.name.trim(),
+                emailId: values.email.trim(),
+                message: values.message.trim()
+            }
+
+            axios.post("/sendmail", userDetails).then(res => {
+                setLoading(true);
+                try {
+                    if (res.data.message == "mail send") {
+                        setLoading(false);
+                        toast.success("Message send successful", {  // Notification
+                            position: "top-right",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            transition: Slide // Use Slide for right-side animation
+                        });
+                        formik.resetForm();
+                    }
+                } catch (error) {
+                    setLoading(false);
+                    toast.error("Error, Please try again later.");
+                }
+            })
         }
     })
 
@@ -112,7 +130,7 @@ const Contactme = () => {
                     {
                         loading &&
                         <div className="loading-container">
-                            <ReactLoading type="spinningBubbles" color="#ed7632" />
+                            <ReactLoading type="spinningBubbles" color="#08436b" />
                         </div>
                     }
                 </div>
