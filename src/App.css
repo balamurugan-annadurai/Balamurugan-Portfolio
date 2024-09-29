@@ -524,6 +524,10 @@ img {
      .skills-set-container .list i{
          font-size: 25px;
      }
+     .type-text{
+        height:90px;
+        margin: 0;
+    }
 }
 
 @media screen and (width<768px) {
