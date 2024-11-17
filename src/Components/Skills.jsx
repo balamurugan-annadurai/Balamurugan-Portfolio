@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import nextLogo from "../assets/next-js.svg"
 
 const Skills = () => {
     useEffect(() => {
@@ -82,6 +83,10 @@ const Skills = () => {
                                 <i className='bx bxl-react'></i>
                                 <h5>React.js</h5>
                             </div>
+                            {/* <div className="list" style={{display:"flex"}}>
+                                <img src={nextLogo} alt="" />
+                                <h5>Next.js</h5>
+                            </div> */}
                             <div className="list">
                                 <i className='bx bxl-redux'></i>
                                 <h5>Redux</h5>
@@ -149,12 +154,16 @@ const Skills = () => {
                         </div>
                         <div className="skills-set-container mb-2">
                             <div className="list">
-                                <i className='bx bx-code'></i>
-                                <h5>C language</h5>
-                            </div>
-                            <div className="list">
                                 <i className='bx bxl-javascript'></i>
                                 <h5>JavaScript</h5>
+                            </div>
+                            <div className="list">
+                                <i class='bx bxl-typescript'></i>
+                                <h5>TypeScript</h5>
+                            </div>
+                            <div className="list">
+                                <i class='bx bxl-c-plus-plus' ></i>
+                                <h5>C++</h5>
                             </div>
                         </div>
                     </div>

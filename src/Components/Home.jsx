@@ -126,7 +126,7 @@ const Home = () => {
                         </div>
                         <p>As a MERN Stack Developer, I specialize in creating dynamic and responsive web applications. I bring a solid skill set in both front-end and back-end development</p>
                         <div className="action-buttons">
-                            <a className='download-btn' target='_blank' href="https://docs.google.com/document/d/1U8WfeGRc5hyEiXwCstLQyz-vQ9NSKYlZBdVmZUSGoiE/edit?usp=sharing">View Resume</a>
+                            <a className='download-btn' target='_blank' href="https://docs.google.com/document/d/14r0o0QBPtCbGFnCSDvNhdE-9-eS4I2Br-rVJENhm2Pc/edit?usp=sharing">View Resume</a>
                             <a className='contact-btn' href='#contact'>Contact me</a>
                         </div>
                     </div>
