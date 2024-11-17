@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import nextLogo from "../assets/next-js.svg"
 
 const Skills = () => {
     useEffect(() => {
@@ -10,12 +9,9 @@ const Skills = () => {
             const arrowIcon = event.currentTarget.querySelector('.bx-chevron-down');
             const innerContainer = event.currentTarget.querySelector('.inner-container');
 
-            // If clickedSkillSet exists, toggle it
             if (clickedSkillSet) {
-                // Check if the clicked dropdown is already open
                 const isAlreadyVisible = clickedSkillSet.classList.contains("show");
 
-                // Close all other dropdowns and reset arrow rotations
                 const skillsNodeList = document.querySelectorAll(".skills-set-container");
                 const arrowNodeList = document.querySelectorAll(".bx-chevron-down");
                 const containerNodeList = document.querySelectorAll(".inner-container");
@@ -24,23 +20,20 @@ const Skills = () => {
                 arrowNodeList.forEach((icon) => icon.classList.remove("active"));
                 containerNodeList.forEach((container) => container.classList.remove("active"));
 
-                // Toggle the current dropdown (close if already open, otherwise open)
                 if (!isAlreadyVisible) {
                     clickedSkillSet.classList.add("show");
-                    innerContainer.classList.add("active"); // Adds the class to rotate the arrow
+                    innerContainer.classList.add("active");
                 } else {
                     clickedSkillSet.classList.remove("show");
-                    innerContainer.classList.remove("active"); // Removes the class to reset the arrow
+                    innerContainer.classList.remove("active");
                 }
             }
         };
 
-        // Add click event to each `.col-xl-6`
         nodeList.forEach(node => {
             node.addEventListener("click", handleShowEffect);
         });
 
-        // Cleanup event listeners on component unmount
         return () => {
             nodeList.forEach(node => {
                 node.removeEventListener("click", handleShowEffect);
@@ -83,10 +76,6 @@ const Skills = () => {
                                 <i className='bx bxl-react'></i>
                                 <h5>React.js</h5>
                             </div>
-                            {/* <div className="list" style={{display:"flex"}}>
-                                <img src={nextLogo} alt="" />
-                                <h5>Next.js</h5>
-                            </div> */}
                             <div className="list">
                                 <i className='bx bxl-redux'></i>
                                 <h5>Redux</h5>

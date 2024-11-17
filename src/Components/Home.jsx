@@ -5,8 +5,7 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Contactme from './Contactme'
 import Footer from './Footer'
-import { TypeAnimation } from 'react-type-animation';  // Import TypeAnimation
-import resume from "../assets/resume.pdf"
+import { TypeAnimation } from 'react-type-animation';
 
 
 const Home = () => {
@@ -119,9 +118,9 @@ const Home = () => {
                                     "Let's create something amazing together!",
                                     1000,
                                 ]}
-                                speed={20}  // Typing speed
+                                speed={20}
                                 style={{ whiteSpace: 'pre-line', fontSize: '1.8em' }}
-                                repeat={Infinity}  // Repeat the typing animation
+                                repeat={Infinity}
                             />
                         </div>
                         <p>As a MERN Stack Developer, I specialize in creating dynamic and responsive web applications. I bring a solid skill set in both front-end and back-end development</p>

@@ -9,17 +9,14 @@ import ReactLoading from 'react-loading';
 const Contactme = () => {
     const [loading, setLoading] = useState(false);
 
-    // Set up formik for form handling and validation
     const formik = useFormik({
 
-        // Initial values
         initialValues: {
             email: '',
             name: '',
             message: ''
         },
 
-        // Validations
         validationSchema: yup.object({
             email: yup.string()
                 .email('Invalid email')
@@ -30,7 +27,7 @@ const Contactme = () => {
                 .required("Message is required")
         }),
 
-        onSubmit: (values) => {   // Function to handle form submission
+        onSubmit: (values) => {
 
             const userDetails = {
                 userName: values.name.trim(),
@@ -43,7 +40,7 @@ const Contactme = () => {
                 try {
                     if (res.data.message == "mail send") {
                         setLoading(false);
-                        toast.success("Message send successful", {  // Notification
+                        toast.success("Message send successful", {
                             position: "top-right",
                             autoClose: 5000,
                             hideProgressBar: false,
@@ -51,7 +48,7 @@ const Contactme = () => {
                             pauseOnHover: true,
                             draggable: true,
                             progress: undefined,
-                            transition: Slide // Use Slide for right-side animation
+                            transition: Slide
                         });
                         formik.resetForm();
                     }
@@ -115,7 +112,6 @@ const Contactme = () => {
 
                     </div>
 
-                    {/* Toast container for displaying notifications */}
                     <ToastContainer
                         position="top-right"
                         autoClose={5000}
