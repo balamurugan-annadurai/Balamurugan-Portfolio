@@ -6,7 +6,7 @@ import Projects from './Projects'
 import Contactme from './Contactme'
 import Footer from './Footer'
 import { TypeAnimation } from 'react-type-animation';
-
+import resume from "../assets/CV_Balamurugan A_2024_FSD.pdf"
 
 const Home = () => {
 
@@ -125,7 +125,7 @@ const Home = () => {
                         </div>
                         <p>As a MERN Stack Developer, I specialize in creating dynamic and responsive web applications. I bring a solid skill set in both front-end and back-end development</p>
                         <div className="action-buttons">
-                            <a className='download-btn' target='_blank' href="https://docs.google.com/document/d/14r0o0QBPtCbGFnCSDvNhdE-9-eS4I2Br-rVJENhm2Pc/edit?usp=sharing">View Resume</a>
+                            <a className='download-btn' target='_blank' href={resume} download>Download Resume</a>
                             <a className='contact-btn' href='#contact'>Contact me</a>
                         </div>
                     </div>

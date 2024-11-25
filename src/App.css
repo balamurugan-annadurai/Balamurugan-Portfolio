@@ -327,7 +327,10 @@ img {
 }
 .outer-card-container{
     padding: 0 10px;
-    height: 100%;
+height: 100%;
+}
+.projects-wrapper{
+    height: 350px;
 }
 .hide{
     visibility: hidden;
@@ -375,6 +378,8 @@ img {
     justify-content: center;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
 }
 .project-links a {
     background-color:#08436b;

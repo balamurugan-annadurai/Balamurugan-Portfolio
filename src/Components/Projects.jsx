@@ -52,10 +52,10 @@ const Projects = () => {
             <div className="projects container mb-3" id='projects'>
                 <p className='text-center m-0'>Browse My Recent</p>
                 <h2 className='text-center skills-title'>Projects</h2>
-
+                <div className="test-credentials text-center w-100 mb-3">Email: testuser@gmail.com | Password: testuser123</div>
                 <div className="project-card-container container">
 
-                    <Slider {...settings}>
+                    <Slider {...settings} >
                         <div className='outer-card-container'>
                             <div className="inner-card-container">
                                 <a href="https://wildlens-tours.netlify.app/" target='_blank'><img className='project-img' src={wildlenstour} alt="" /></a>
@@ -89,13 +89,12 @@ const Projects = () => {
                         <div className='outer-card-container'>
                             <div className="inner-card-container">
                                 <a href="https://react-shopping-cart-bala.netlify.app/" target='_blank'><img className='project-img' src={shoppingCart} alt="" /></a>
-                                <h4 className='text-center project-title mt-2 mb-2'>React shopping cart Website</h4>
+                                <h4 className='text-center project-title mt-2 mb-2'>React shopping cart</h4>
                                 <p className='text-center project-des'>A dynamic e-commerce platform built with React, enabling users to add and manage products in their cart, view real-time updates, and experience seamless navigation across devices. Offers a sleek design and intuitive shopping interface, real time</p>
                                 <div className="action-buttons">
                                     <div className="project-links">
-                                        <a href="https://react-shopping-cart-bala.netlify.app/" target='_blank'>LIVE DEMO</a>
-                                        <a href="https://github.com/balamurugan-annadurai/React-Shopping-Cart" target='_blank'>GitHub FrontEnd</a>
-                                        <a href="" target='_blank'>GitHub BackEnd</a>
+                                        <a href="https://bala-shoppingcart.netlify.app/" target='_blank'>LIVE DEMO</a>
+                                        <a href="https://github.com/balamurugan-annadurai/Shopping-cart.git" target='_blank'>GitHub FrontEnd</a>
                                     </div>
                                 </div>
                             </div>

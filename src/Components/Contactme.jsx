@@ -28,7 +28,7 @@ const Contactme = () => {
         }),
 
         onSubmit: (values) => {
-
+            setLoading(true);
             const userDetails = {
                 userName: values.name.trim(),
                 emailId: values.email.trim(),
@@ -36,7 +36,6 @@ const Contactme = () => {
             }
 
             axios.post("/sendmail", userDetails).then(res => {
-                setLoading(true);
                 try {
                     if (res.data.message == "mail send") {
                         setLoading(false);

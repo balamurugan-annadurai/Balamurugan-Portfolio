@@ -73,12 +73,28 @@ const Skills = () => {
                                 <h5>Bootstrap</h5>
                             </div>
                             <div className="list">
+                            <i class='bx bx-code' ></i>
+                                <h5>Material UI</h5>
+                            </div>
+                            <div className="list">
                                 <i className='bx bxl-react'></i>
                                 <h5>React.js</h5>
                             </div>
                             <div className="list">
+                            <i class='bx bx-code-alt' ></i>
+                                <h5>Next.js</h5>
+                            </div>
+                            <div className="list">
                                 <i className='bx bxl-redux'></i>
                                 <h5>Redux</h5>
+                            </div>
+                            <div className="list">
+                            <i class='bx bx-code' ></i>
+                                <h5>Zustand</h5>
+                            </div>
+                            <div className="list">
+                            <i class='bx bx-code-alt' ></i>
+                                <h5>React Query</h5>
                             </div>
                         </div>
                     </div>
@@ -127,9 +143,10 @@ const Skills = () => {
                                 <h5>GitHub</h5>
                             </div>
                             <div className="list">
-                                <i className='bx bxl-visual-studio'></i>
-                                <h5>Visual Studio Code</h5>
+                            <i class='bx bx-code' ></i>
+                                <h5>Bitbucket</h5>
                             </div>
+                           
                         </div>
                     </div>
 
