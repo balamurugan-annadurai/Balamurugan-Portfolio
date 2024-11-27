@@ -1,18 +1,18 @@
 import React from 'react'
 
-const ProjectCard = ({ img }) => {
+const ProjectCard = ({ img,title,description,demoUrl,frontendRepo,backendRepo}) => {
     return (
         <>
             <div className='outer-card-container'>
                 <div className="inner-card-container">
-                    <img className='project-img' src={img} alt="" />
-                    <h4 className='text-center project-title mt-2 mb-2'>Tourism booking web Application</h4>
-                    <p className='text-center project-des'>WildLens Tours, a comprehensive platform for discovering and booking wildlife tours globally. This MERN stack application offers a dynamic user experience for planning adventures and robust admin features for managing bookings and tours</p>
+                    <a href={demoUrl} target='_blank'><img className='project-img' src={img} alt="" /></a>
+                    <h4 className='text-center project-title mt-2 mb-2'>{title}</h4>
+                    <p className='text-center project-des'>{description}</p>
                     <div className="action-buttons">
                         <div className="project-links">
-                            <a href="">LIVE DEMO</a>
-                            <a href="">GitHub FrontEnd</a>
-                            <a href="">GitHub BackEnd</a>
+                            <a href={demoUrl} target='_blank'>LIVE DEMO</a>
+                            <a href={frontendRepo} target='_blank'>GitHub FrontEnd</a>
+                            {backendRepo && <a href={backendRepo} target='_blank'>GitHub BackEnd</a>}
                         </div>
                     </div>
                 </div>
