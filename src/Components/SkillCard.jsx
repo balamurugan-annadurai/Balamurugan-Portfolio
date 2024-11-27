@@ -13,7 +13,9 @@ const SkillCard = ({ category, icon, skills }) => {
         <div className="inner-container" onClick={handleToggleVisibility}>
           <i className={icon + ' skill-icon'}></i>
           <h5>{category}</h5>
-          <i className={`bx bx-chevron-down ${isVisible ? 'active' : ''}`}></i>
+          <i
+            className={`bx bx-chevron-down ${isVisible ? 'active' : ''}`}
+          ></i>
         </div>
       </div>
       <div className={`skills-set-container mb-2 ${isVisible ? 'show' : ''}`}>

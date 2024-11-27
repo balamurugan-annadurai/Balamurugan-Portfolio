@@ -308,6 +308,11 @@ img {
     color: #000c1c;
     font-size: 17px;
 }
+.bx-chevron-down.active {
+    transform: rotate(180deg); 
+    transition: transform 0.3s ease; 
+}
+  
 .projects h2{
     font-weight: 700 !important;
     font-size: 40px;
