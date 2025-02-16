@@ -1,6 +1,8 @@
 import wildlenstour from "../assets/wildlenstour.png";
 import urlshortner from "../assets/urlshortner.png";
-import shoppingCart from "../assets/shopping-cart.png";
+import ecommerce from "../assets/ecommerce.png";
+import goalTracker from "../assets/goalTracker.png";
+
 
 const projects = [
   {
@@ -22,12 +24,22 @@ const projects = [
     backendRepo: "https://github.com/balamurugan-annadurai/urlshortener-backend",
   },
   {
-    title: "React shopping cart",
+    title: "Ecommerce Application",
     description:
-      "A dynamic e-commerce platform built with React, enabling users to add and manage products in their cart, view real-time updates, and experience seamless navigation across devices. Offers a sleek design and intuitive shopping interface, real time",
-    img: shoppingCart,
-    demoUrl: "https://bala-shoppingcart.netlify.app/",
-    frontendRepo: "https://github.com/balamurugan-annadurai/Shopping-cart.git",
+      "A dynamic Full stack e-commerce platform built with React, enabling users to add and manage products in their cart, view real-time updates, and experience seamless navigation across devices. Offers a sleek design and intuitive shopping interface, real time",
+    img: ecommerce,
+    demoUrl: "https://timzzz.netlify.app/",
+    frontendRepo: "https://github.com/balamurugan-annadurai/Ecommerce-Frontend",
+    backendRepo: "https://github.com/balamurugan-annadurai/Ecommerce-backend",
+  },
+  {
+    title: "Goal Tracker",
+    description:
+      "A dynamic full-stack goal tracking application built with Next.js, enabling users to create, update, and manage goals efficiently. Features real-time status updates, reminders for improved productivity, and seamless navigation across devices. ",
+    img: goalTracker,
+    demoUrl: "https://trackyourgoals.netlify.app/",
+    frontendRepo: "https://github.com/balamurugan-annadurai/Goal-Tracker-Frontend",
+    backendRepo: "https://github.com/balamurugan-annadurai/Goal-Tracker-Backend",
   },
 ];
 
