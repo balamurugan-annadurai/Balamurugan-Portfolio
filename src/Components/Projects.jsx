@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="projects container mb-3" id='projects'>
                 <p className='text-center m-0'>Browse My Recent</p>
                 <h2 className='text-center skills-title'>Projects</h2>
-                <div className="test-credentials text-center w-100 mb-3">Email: testuser@gmail.com | Password: testuser123</div>
+                <div className="test-credentials text-center w-100 mb-3">Email: testuser@balatestingsxyz.com | Password: testuser123</div>
                 <div className="project-card-container container">
 
                     <Slider {...settings} >
