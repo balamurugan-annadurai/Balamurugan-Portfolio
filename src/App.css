@@ -334,6 +334,20 @@ img {
     transition: transform 0.3s ease;
 }
 
+/* Custom styles for slick arrows */
+.slick-prev::before, .slick-next::before {
+    color: #08436B !important;  /* Change arrow color to black */
+    font-size: 24px !important; /* Adjust size if needed */
+    opacity: 1 !important; /* Ensure visibility */
+}
+
+/* Adjust the background if needed */
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border-radius: 50%; /* Optional: Make it circular */
+    width: 40px;
+    height: 40px;
+}
 
 .projects h2 {
     font-weight: 700 !important;
