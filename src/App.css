@@ -337,8 +337,9 @@ img {
 /* Custom styles for slick arrows */
 .slick-prev::before, .slick-next::before {
     color: #08436B !important;  /* Change arrow color to black */
-    font-size: 24px !important; /* Adjust size if needed */
+    font-size: 30px !important; /* Adjust size if needed */
     opacity: 1 !important; /* Ensure visibility */
+    
 }
 
 /* Adjust the background if needed */

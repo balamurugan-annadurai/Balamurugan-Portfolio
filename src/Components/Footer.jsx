@@ -15,12 +15,7 @@ const Footer = () => {
                 </div>
 
                 <div className="info-container custom-ft">
-                    <h4 className='blue-secondary'>Links</h4>
-                    <ul>
-                        <li><a href="#" className='green'>About</a></li>
-                        <li><a href="#skills" className='green'>Skills</a></li>
-                        <li><a href="#contact" className='green'>Contact</a></li>
-                    </ul>
+                   
                 </div>
 
                 <div className="contact-details-container custom-ft">
