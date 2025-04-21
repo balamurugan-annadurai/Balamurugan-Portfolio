@@ -6,7 +6,7 @@ import Projects from './Projects'
 import Contactme from './Contactme'
 import Footer from './Footer'
 import { TypeAnimation } from 'react-type-animation';
-import resume from "../assets/CV_Balamurugan A_2024_FSD.pdf"
+import resume from "../assets/CV_Balamurugan A_2025_Software-Engineer.pdf"
 
 const Home = () => {
 
